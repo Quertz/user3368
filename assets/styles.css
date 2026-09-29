@@ -240,3 +240,11 @@ img{max-width:100%}
     overflow:visible;
   }
 }
+
+.cell>span{
+  font-size:15px;
+  color:#5f5d57;
+  transition:.15s ease;
+}
+.cell:hover>span{color:#b3b0a7}
+.cell.crossed>span{opacity:.12}
