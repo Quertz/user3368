@@ -61,29 +61,35 @@ button,input{font:inherit}
   pointer-events:none;
   z-index:1;
   background:
-    radial-gradient(circle at 15% 20%, rgba(255,211,145,.075), transparent 9%),
-    radial-gradient(circle at 39% 20%, rgba(255,211,145,.085), transparent 8.5%),
-    radial-gradient(circle at 62% 20%, rgba(255,211,145,.085), transparent 8.5%),
-    radial-gradient(circle at 86% 20%, rgba(255,211,145,.075), transparent 9%);
+    radial-gradient(circle at 15% 20%, rgba(255,214,150,.16), transparent 10%),
+    radial-gradient(circle at 39% 20%, rgba(255,214,150,.19), transparent 9%),
+    radial-gradient(circle at 62% 20%, rgba(255,214,150,.19), transparent 9%),
+    radial-gradient(circle at 86% 20%, rgba(255,214,150,.16), transparent 10%);
   mix-blend-mode:screen;
-  opacity:.54;
-  animation:heroFlicker 5.7s infinite steps(1);
+  opacity:.74;
+  animation:heroFlicker 3.6s infinite steps(1);
 }
 
 @keyframes heroFlicker{
-  0%,100%{opacity:.52}
-  12%{opacity:.59}
-  13%{opacity:.48}
-  14%{opacity:.61}
-  37%{opacity:.55}
-  38%{opacity:.63}
-  39%{opacity:.50}
-  66%{opacity:.57}
-  67%{opacity:.46}
-  68%{opacity:.60}
-  83%{opacity:.54}
-  84%{opacity:.62}
-  85%{opacity:.51}
+  0%,100%{opacity:.70}
+  6%{opacity:.88}
+  7%{opacity:.58}
+  8%{opacity:.92}
+  18%{opacity:.76}
+  19%{opacity:.96}
+  20%{opacity:.64}
+  33%{opacity:.82}
+  34%{opacity:.60}
+  35%{opacity:.94}
+  49%{opacity:.74}
+  50%{opacity:.98}
+  51%{opacity:.66}
+  68%{opacity:.86}
+  69%{opacity:.62}
+  70%{opacity:.95}
+  83%{opacity:.78}
+  84%{opacity:.97}
+  85%{opacity:.68}
 }
 
 @media (prefers-reduced-motion: reduce){
