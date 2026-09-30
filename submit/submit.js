@@ -17,5 +17,5 @@
   if (phone) phone.setAttribute("name", "phone");
   if (answer) answer.setAttribute("name", "answer");
 
-  console.log("CRYPTIC SUBMIT: PLAIN POST COMPAT BUILD 4");
+  console.log("CRYPTIC SUBMIT: FINAL BUILD 5");
 })();

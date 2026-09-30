@@ -1,0 +1,14 @@
+Production hostname:
+blackbox.user3368.cloud
+
+Cloudflare Worker route:
+blackbox.user3368.cloud/api/*
+
+Frontend submit:
+POST /api/submit
+
+Working submit path:
+/submit/
+
+Build marker:
+BUILD 5 - 13:22 // FINAL
