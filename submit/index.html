@@ -32,16 +32,63 @@
   <a class="back" href="../">← BACK</a>
 </section>
 <section class="panel">
-<form class="form" id="submitForm" autocomplete="off">
-  <label>EMAIL<input id="email" name="email" type="email" maxlength="160" required placeholder="you@example.com"></label>
-  <label>PHONE<input id="phone" name="phone" type="tel" maxlength="32" required placeholder="+420..."></label>
-  <label class="answer">ANSWER<input id="answer" name="answer" type="text" maxlength="64" required spellcheck="false" autocomplete="off"></label>
-  <label class="consent"><input id="consent" type="checkbox" required><span>Souhlasím s pravidly soutěže a se zpracováním údajů pro vyhodnocení a kontaktování výherce. <a href="#" style="text-decoration:underline">Pravidla</a> / <a href="#" style="text-decoration:underline">Soukromí</a></span></label>
-  <div class="form-actions"><button class="btn primary" type="submit">TRANSMIT</button><span class="status" id="status"></span></div>
+<form class="form"
+      action="/api/submit"
+      method="post"
+      accept-charset="UTF-8"
+      autocomplete="off">
+
+  <label>
+    EMAIL
+    <input
+      name="email"
+      type="email"
+      maxlength="160"
+      required
+      placeholder="you@example.com">
+  </label>
+
+  <label>
+    PHONE
+    <input
+      name="phone"
+      type="tel"
+      maxlength="32"
+      required
+      placeholder="+420...">
+  </label>
+
+  <label class="answer">
+    ANSWER
+    <input
+      name="answer"
+      type="text"
+      maxlength="64"
+      required
+      spellcheck="false"
+      autocomplete="off">
+  </label>
+
+  <label class="consent">
+    <input
+      type="checkbox"
+      required>
+    <span>
+      Souhlasím s pravidly soutěže a se zpracováním údajů
+      pro vyhodnocení a kontaktování výherce.
+      <a href="#" style="text-decoration:underline">Pravidla</a>
+      /
+      <a href="#" style="text-decoration:underline">Soukromí</a>
+    </span>
+  </label>
+
+  <div class="form-actions">
+    <button class="btn primary" type="submit">
+      TRANSMIT
+    </button>
+  </div>
 </form>
 </section>
 <footer><span>CRYPTIC PLAYGROUND</span><span>NOT EVERYTHING IN THE SOURCE IS A CLUE.</span></footer></main>
 <script src="../assets/archive.js"></script>
-<script src="config.js"></script>
-<script src="submit.js"></script>
 </body></html>
