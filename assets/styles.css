@@ -39,19 +39,57 @@ button,input{font:inherit}
   display:block;
   width:100%;
   height:auto;
-  aspect-ratio:1536/1024;
+  aspect-ratio:1672/941;
   object-fit:cover;
   object-position:center;
-  filter:grayscale(1) brightness(.66) contrast(1.04);
+  filter:grayscale(.90) brightness(.96) contrast(1.14);
+  transform:scale(1.005);
 }
 .hero-shade{
   position:absolute;
   inset:0;
   pointer-events:none;
+  z-index:1;
   background:
-    linear-gradient(180deg,rgba(5,5,5,.08) 0%,rgba(5,5,5,.02) 48%,rgba(5,5,5,.70) 100%),
-    linear-gradient(90deg,rgba(5,5,5,.30) 0%,transparent 34%,transparent 72%,rgba(5,5,5,.18) 100%);
+    linear-gradient(180deg,rgba(5,5,5,.015) 0%,rgba(5,5,5,.005) 52%,rgba(5,5,5,.34) 100%),
+    linear-gradient(90deg,rgba(5,5,5,.08) 0%,transparent 30%,transparent 74%,rgba(5,5,5,.05) 100%);
 }
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:1;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255,211,145,.075), transparent 9%),
+    radial-gradient(circle at 39% 20%, rgba(255,211,145,.085), transparent 8.5%),
+    radial-gradient(circle at 62% 20%, rgba(255,211,145,.085), transparent 8.5%),
+    radial-gradient(circle at 86% 20%, rgba(255,211,145,.075), transparent 9%);
+  mix-blend-mode:screen;
+  opacity:.54;
+  animation:heroFlicker 5.7s infinite steps(1);
+}
+
+@keyframes heroFlicker{
+  0%,100%{opacity:.52}
+  12%{opacity:.59}
+  13%{opacity:.48}
+  14%{opacity:.61}
+  37%{opacity:.55}
+  38%{opacity:.63}
+  39%{opacity:.50}
+  66%{opacity:.57}
+  67%{opacity:.46}
+  68%{opacity:.60}
+  83%{opacity:.54}
+  84%{opacity:.62}
+  85%{opacity:.51}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .hero::after{animation:none}
+}
+
 .hero-caption{
   position:absolute;
   z-index:2;
@@ -223,6 +261,7 @@ img{max-width:100%}
     aspect-ratio:auto;
     object-fit:contain;
     object-position:center;
+    transform:none;
   }
   .hero-shade{
     height:auto;
