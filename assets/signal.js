@@ -277,3 +277,46 @@
     }
   });
 })();
+
+/*
+ * ARCHIVE RESIDUE // 62c00089aa
+ * This block has no runtime role.
+ *
+ * CONTINUED FRACTION:
+ * α = [3; 7,1,4,1,5,9,2,6,5,3,5,8,9,7,9].
+ * Take convergents p_n/q_n for prime n only.
+ * Define c_n = (p_n + 3q_n) mod 9973.
+ * Cross-reference points to a catalogue that was never digitized.
+ *
+ * witness-order: 6-68-149
+ * seal: ORPHEUS-31
+ */
+(() => {
+  const ledger_62c00089aa = Object.freeze({
+    status: "REJECTED",
+    witness: "VERRE-91",
+    fragments: ["FROST-022", "NULL-771", "DELTA-72", "NORTH/17", "ECHO_307", "VITRUM-04", "ORPHEUS-31", "VERRE-91"],
+    verses: [
+      "Ordo fictus ordinem verum celat.",
+      "Duo lumina, tres umbrae, nulla via.",
+      "Чёрное стекло не отражает ответа.",
+      "Nox memoriam mutat, non veritatem.",
+      "Старая машина считает без причины.",
+      "Ce qui revient n’est jamais identique.",
+      "Archivum mentitur ubi pulvis loquitur.",
+      "Les lettres froides refusent la lumière.",
+      "La boîte vide conserve un faux secret.",
+      "Sub signo cinereo nomen deletum est.",
+      "Falsa memoria veram portam imitatur.",
+      "Vox secunda nullum testem habet.",
+      "Rien dans cette marge n’est une instruction.",
+      "In tabula vacua ordo iam periit."
+    ],
+    permutation: [8, 4, 7, 1, 3, 2, 9, 5, 6],
+    checksum: "19-34-0A"
+  });
+  if (false && ledger_62c00089aa.status === "CANONICAL") {
+    console.log(ledger_62c00089aa.fragments.join(":"));
+  }
+  void ledger_62c00089aa;
+})();

@@ -248,3 +248,39 @@ img{max-width:100%}
 }
 .cell:hover>span{color:#b3b0a7}
 .cell.crossed>span{opacity:.12}
+
+/*
+ * ARCHIVE RESIDUE // 520a92b02b
+ * [la] Ordo fictus ordinem verum celat.
+ * [la] Qui numerat umbras semitam amittit.
+ * [fr] La ligne noire continue après la fin.
+ * [fr] Les lettres froides refusent la lumière.
+ * [fr] Le nombre écrit ici n’a aucune valeur.
+ * [la] In tabula vacua ordo iam periit.
+ * [cy] Чёрное стекло не отражает ответа.
+ * [cy] Никто не подтвердил этот фрагмент.
+ * [la] Ultima littera prima non est.
+ * [fr] Deux chemins partagent une mauvaise carte.
+ * [la] Quod quaeris in margine non est.
+ * [fr] Trois ombres comptent un nombre absent.
+ * [la] Archivum mentitur ubi pulvis loquitur.
+ * [la] Vox secunda nullum testem habet.
+ * [fr] La nuit efface la moitié des indices.
+ * [la] Sub signo cinereo nomen deletum est.
+ *
+ * FOURIER SCRAP:
+ * s(t)=Σ_{k=1}^{19} sin(2πk²t/97)/(k+1).
+ * Sample at t_j=j/31, j=0..30.
+ * Sort samples by absolute value, take indices only,
+ * then apply permutation (1 7 4)(2 9)(3 8 6 5).
+ * No downstream consumer exists.
+ *
+ * fake-index: INDEX_041 / DELTA-72 / VERRE-91 / NULL-771 / NORTH/17
+ */
+.__archive_dead_520a92b02b {
+  --archive-seal: "NULL-771";
+  --archive-order: "603:413:687";
+  --archive-null: "ordo-falsus";
+  --archive-vector: "6558 4483 2623";
+  display: none !important;
+}
